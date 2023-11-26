@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body class="bg-primary-subtle">
+    <form id="registrationForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+    
+        <label for="age">Возраст:</label>
+        <input type="number" id="age" name="age" required min="0">
+    
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+    
+        <label for="color">Цвет аватарки:</label>
+        <input type="color" id="color" name="color" value="#ffc0cb">
+    
+        <label for="file">Загрузить файл*:</label>
+        <input type="file" id="file" name="file">
+    
+        <label for="slider">Сколько планируете сидеть на нашем сайте (в часах):</label>
+        <input type="range" id="slider" name="slider" min="0" max="24" value="0">
+    
+        <label>Выберите категории:</label>
+        <div class="center">
+            <input type="checkbox" id="category1" name="category[]" value="category1">
+            <label for="category1">Категория 1</label>
+        </div>
+        <div class="center">
+            <input type="checkbox" id="category2" name="category[]" value="category2">
+            <label for="category2">Категория 2</label>
+        </div>
+        <div class="center">
+            <input type="checkbox" id="category3" name="category[]" value="category3">
+            <label for="category3">Категория 3</label>
+        </div>
+        
+        <div>
+            <label>Пол:</label>
+            <div class="center">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Мужской</label>
+            </div>
+            <div class="center">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Женский</label>
+            </div>
+            <div class="center">
+                <input type="radio" id="unknown" name="gender" value="unknown" required>
+                <label for="unknown">Неизвестно</label>
+            </div>
+        </div>
+        <div>
+            <label for="updates">Список обновлений:</label>
+            <select class="updates" id="updates" name="updates">
+              <option value="update1">Обновление 1</option>
+              <option value="update2">Обновление 2</option>
+              <option value="update3">Обновление 3</option>
+            </select>        
+        </div>
+        <label for="about">О себе:</label>
+        <textarea id="about" name="about" rows="4"></textarea>
+        <div>
+            <button class="button" type="button" onclick="submitForm()">Зарегистрироваться</button>
+        </div>
+      </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="scrip.js"></script>
+</body>
+</html>
